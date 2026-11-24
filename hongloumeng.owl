@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:hlm="http://www.hongloumeng.org/ontology#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#ShiShu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">侍书</rdfs:label>
+    <hlm:name>侍书</hlm:name>
+    <hlm:role>贾探春丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#MingYan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Servant"/>
+    <rdfs:label xml:lang="zh">茗烟</rdfs:label>
+    <hlm:name>茗烟</hlm:name>
+    <hlm:role>贾宝玉小厮</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#SiQi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">司棋</rdfs:label>
+    <hlm:name>司棋</hlm:name>
+    <hlm:role>贾迎春丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#relativeOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:label xml:lang="zh">亲属</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#QinKeQing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">秦可卿</rdfs:label>
+    <hlm:name>秦可卿</hlm:name>
+    <hlm:role>贾蓉之妻</hlm:role>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#QinZhong"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#YouSanJie">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">尤三姐</rdfs:label>
+    <hlm:name>尤三姐</hlm:name>
+    <hlm:role>尤氏之妹</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaMin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾敏</rdfs:label>
+    <hlm:name>贾敏</hlm:name>
+    <hlm:role>林黛玉之母</hlm:role>
+    <hlm:hasSpouse rdf:resource="http://www.hongloumeng.org/ontology#LinRuHai"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#LinDaiYu"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">姓名</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N784cd05be8e740779ebfa51534ebb3f7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.hongloumeng.org/ontology#serves"/>
+    <owl:someValuesFrom rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaLian">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾琏</rdfs:label>
+    <hlm:name>贾琏</hlm:name>
+    <hlm:role>荣国府琏二爷</hlm:role>
+    <hlm:hasSpouse rdf:resource="http://www.hongloumeng.org/ontology#WangXiFeng"/>
+    <hlm:hasSpouse rdf:resource="http://www.hongloumeng.org/ontology#YouErJie"/>
+    <hlm:hasSpouse rdf:resource="http://www.hongloumeng.org/ontology#QiuTong"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#QiaoJie"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaYingChun"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaTanChun">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾探春</rdfs:label>
+    <hlm:name>贾探春</hlm:name>
+    <hlm:alias>蕉下客</hlm:alias>
+    <hlm:role>贾政庶女</hlm:role>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaHuan"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#ShiShu"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#CuiMo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#WangFuRen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">王夫人</rdfs:label>
+    <hlm:name>王夫人</hlm:name>
+    <hlm:role>贾政之妻</hlm:role>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaZhu"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaYuanChun"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaBaoYu"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#XueYiMa"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#JinChuan"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#ZhouRuiJiaDe"/>
+    <hlm:relativeOf rdf:resource="http://www.hongloumeng.org/ontology#LiuLaoLao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaBaoYu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾宝玉</rdfs:label>
+    <hlm:name>贾宝玉</hlm:name>
+    <hlm:alias>怡红公子</hlm:alias>
+    <hlm:role>荣国府宝二爷</hlm:role>
+    <hlm:residence>怡红院</hlm:residence>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaTanChun"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaHuan"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#XiRen"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#QingWen"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#SheYue"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#QiuWen"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#MingYan"/>
+    <hlm:loves rdf:resource="http://www.hongloumeng.org/ontology#LinDaiYu"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaZheng">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾政</rdfs:label>
+    <hlm:name>贾政</hlm:name>
+    <hlm:role>荣国府二老爷</hlm:role>
+    <hlm:hasSpouse rdf:resource="http://www.hongloumeng.org/ontology#WangFuRen"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaZhu"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaYuanChun"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaBaoYu"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaTanChun"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaHuan"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaMin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#YuanYang">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">鸳鸯</rdfs:label>
+    <hlm:name>鸳鸯</hlm:name>
+    <hlm:role>贾母丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#ZhouYiNiang">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">周姨娘</rdfs:label>
+    <hlm:name>周姨娘</hlm:name>
+    <hlm:role>贾政之妾</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#QingWen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">晴雯</rdfs:label>
+    <hlm:name>晴雯</hlm:name>
+    <hlm:role>贾宝玉丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaYuanChun">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾元春</rdfs:label>
+    <hlm:name>贾元春</hlm:name>
+    <hlm:role>贤德妃</hlm:role>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaBaoYu"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaTanChun"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaHuan"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0885187f89fb4702b0d7b8c6dfa81335">
+    <rdf:first rdf:resource="http://www.hongloumeng.org/ontology#hasChild"/>
+    <rdf:rest rdf:nodeID="Nbb657ea7ed1f47ca817ab2da86a3efd7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#Person">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label xml:lang="zh">人物</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#LiuLaoLao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">刘姥姥</rdfs:label>
+    <hlm:name>刘姥姥</hlm:name>
+    <hlm:role>王夫人远亲</hlm:role>
+    <hlm:hasGrandchild rdf:resource="http://www.hongloumeng.org/ontology#BanEr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#XueYan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">雪雁</rdfs:label>
+    <hlm:name>雪雁</hlm:name>
+    <hlm:role>林黛玉丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaMu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾母</rdfs:label>
+    <hlm:name>贾母</hlm:name>
+    <hlm:alias>史太君</hlm:alias>
+    <hlm:role>荣国府老太君</hlm:role>
+    <hlm:residence>荣庆堂</hlm:residence>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaShe"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaZheng"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaMin"/>
+    <hlm:hasGrandchild rdf:resource="http://www.hongloumeng.org/ontology#JiaLian"/>
+    <hlm:hasGrandchild rdf:resource="http://www.hongloumeng.org/ontology#JiaYingChun"/>
+    <hlm:hasGrandchild rdf:resource="http://www.hongloumeng.org/ontology#JiaZhu"/>
+    <hlm:hasGrandchild rdf:resource="http://www.hongloumeng.org/ontology#JiaYuanChun"/>
+    <hlm:hasGrandchild rdf:resource="http://www.hongloumeng.org/ontology#JiaBaoYu"/>
+    <hlm:hasGrandchild rdf:resource="http://www.hongloumeng.org/ontology#JiaTanChun"/>
+    <hlm:hasGrandchild rdf:resource="http://www.hongloumeng.org/ontology#JiaHuan"/>
+    <hlm:hasGrandchild rdf:resource="http://www.hongloumeng.org/ontology#LinDaiYu"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#YuanYang"/>
+    <hlm:relativeOf rdf:resource="http://www.hongloumeng.org/ontology#ShiXiangYun"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaZhu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾珠</rdfs:label>
+    <hlm:name>贾珠</hlm:name>
+    <hlm:role>贾政长子（早逝）</hlm:role>
+    <hlm:hasSpouse rdf:resource="http://www.hongloumeng.org/ontology#LiWan"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaLan"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaYuanChun"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaBaoYu"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaTanChun"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaHuan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#QinZhong">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">秦钟</rdfs:label>
+    <hlm:name>秦钟</hlm:name>
+    <hlm:role>秦可卿之弟</hlm:role>
+    <hlm:loves rdf:resource="http://www.hongloumeng.org/ontology#ZhiNengEr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#XuePan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">薛蟠</rdfs:label>
+    <hlm:name>薛蟠</hlm:name>
+    <hlm:role>薛姨妈之子</hlm:role>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#XueBaoChai"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#XiangLing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaJing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾敬</rdfs:label>
+    <hlm:name>贾敬</hlm:name>
+    <hlm:role>宁国府老爷（修道）</hlm:role>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaZhen"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaXiChun"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#residence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">居所</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#LinRuHai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">林如海</rdfs:label>
+    <hlm:name>林如海</hlm:name>
+    <hlm:role>林黛玉之父</hlm:role>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#LinDaiYu"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#alias">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">别称</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#ZhouRuiJiaDe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Servant"/>
+    <rdfs:label xml:lang="zh">周瑞家的</rdfs:label>
+    <hlm:name>周瑞家的</hlm:name>
+    <hlm:role>王夫人陪房</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#LiWan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">李纨</rdfs:label>
+    <hlm:name>李纨</hlm:name>
+    <hlm:role>贾珠之妻</hlm:role>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaLan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#CuiMo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">翠墨</rdfs:label>
+    <hlm:name>翠墨</hlm:name>
+    <hlm:role>贾探春丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaXiChun">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾惜春</rdfs:label>
+    <hlm:name>贾惜春</hlm:name>
+    <hlm:alias>藕榭</hlm:alias>
+    <hlm:role>贾敬之女</hlm:role>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#RuHua"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#Maid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.hongloumeng.org/ontology#JiaFamilyMember"/>
+    <rdfs:label xml:lang="zh">丫鬟</rdfs:label>
+    <owl:equivalentClass rdf:nodeID="N784cd05be8e740779ebfa51534ebb3f7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#Servant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.hongloumeng.org/ontology#JiaFamilyMember"/>
+    <rdfs:label xml:lang="zh">仆从</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#YouErJie">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">尤二姐</rdfs:label>
+    <hlm:name>尤二姐</hlm:name>
+    <hlm:role>贾琏之妾</hlm:role>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#YouSanJie"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaZhen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾珍</rdfs:label>
+    <hlm:name>贾珍</hlm:name>
+    <hlm:role>宁国府当家人</hlm:role>
+    <hlm:hasSpouse rdf:resource="http://www.hongloumeng.org/ontology#YouShi"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaRong"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaXiChun"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#XiangLing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">香菱</rdfs:label>
+    <hlm:name>香菱</hlm:name>
+    <hlm:role>薛蟠之妾</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#CaiYun">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">彩云</rdfs:label>
+    <hlm:name>彩云</hlm:name>
+    <hlm:role>贾环丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#WangXiFeng">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">王熙凤</rdfs:label>
+    <hlm:name>王熙凤</hlm:name>
+    <hlm:alias>凤辣子</hlm:alias>
+    <hlm:role>荣国府琏二奶奶</hlm:role>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#QiaoJie"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#PingEr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#XueYiMa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">薛姨妈</rdfs:label>
+    <hlm:name>薛姨妈</hlm:name>
+    <hlm:role>薛宝钗之母</hlm:role>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#XuePan"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#XueBaoChai"/>
+    <hlm:relativeOf rdf:resource="http://www.hongloumeng.org/ontology#XueBaoQin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaRong">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾蓉</rdfs:label>
+    <hlm:name>贾蓉</hlm:name>
+    <hlm:role>贾珍之子</hlm:role>
+    <hlm:hasSpouse rdf:resource="http://www.hongloumeng.org/ontology#QinKeQing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#serves">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">侍奉</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <owl:inverseOf rdf:resource="http://www.hongloumeng.org/ontology#hasServant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaHuan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾环</rdfs:label>
+    <hlm:name>贾环</hlm:name>
+    <hlm:role>贾政庶子</hlm:role>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#CaiYun"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaShe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾赦</rdfs:label>
+    <hlm:name>贾赦</hlm:name>
+    <hlm:role>荣国府大老爷</hlm:role>
+    <hlm:hasSpouse rdf:resource="http://www.hongloumeng.org/ontology#XingFuRen"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaLian"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaYingChun"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaZheng"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#JiaMin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#PingEr">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">平儿</rdfs:label>
+    <hlm:name>平儿</hlm:name>
+    <hlm:role>王熙凤丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#loves">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">爱慕</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#hasSpouse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:label xml:lang="zh">夫妻</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.hongloumeng.org/ontology#relativeOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#XiRen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">袭人</rdfs:label>
+    <hlm:name>袭人</hlm:name>
+    <hlm:role>贾宝玉大丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#ShiXiangYun">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">史湘云</rdfs:label>
+    <hlm:name>史湘云</hlm:name>
+    <hlm:alias>枕霞旧友</hlm:alias>
+    <hlm:role>贾母侄孙女</hlm:role>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#CuiLv"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JinChuan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">金钏</rdfs:label>
+    <hlm:name>金钏</hlm:name>
+    <hlm:role>王夫人丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#ZhiNengEr">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">智能儿</rdfs:label>
+    <hlm:name>智能儿</hlm:name>
+    <hlm:role>尼姑</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#CuiLv">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">翠缕</rdfs:label>
+    <hlm:name>翠缕</hlm:name>
+    <hlm:role>史湘云丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#YingEr">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">莺儿</rdfs:label>
+    <hlm:name>莺儿</hlm:name>
+    <hlm:role>薛宝钗丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#QiuWen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">秋纹</rdfs:label>
+    <hlm:name>秋纹</hlm:name>
+    <hlm:role>贾宝玉丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#hasSibling">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:label xml:lang="zh">兄弟姐妹</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.hongloumeng.org/ontology#relativeOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#YouShi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">尤氏</rdfs:label>
+    <hlm:name>尤氏</hlm:name>
+    <hlm:role>贾珍之妻</hlm:role>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#YouErJie"/>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#YouSanJie"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#BanEr">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">板儿</rdfs:label>
+    <hlm:name>板儿</hlm:name>
+    <hlm:role>刘姥姥之孙</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#RuHua">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">入画</rdfs:label>
+    <hlm:name>入画</hlm:name>
+    <hlm:role>贾惜春丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#BeiJingWang">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">北静王</rdfs:label>
+    <hlm:name>北静王</hlm:name>
+    <hlm:role>郡王</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#XueBaoChai">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">薛宝钗</rdfs:label>
+    <hlm:name>薛宝钗</hlm:name>
+    <hlm:alias>蘅芜君</hlm:alias>
+    <hlm:role>薛姨妈之女</hlm:role>
+    <hlm:residence>蘅芜苑</hlm:residence>
+    <hlm:hasSibling rdf:resource="http://www.hongloumeng.org/ontology#XueBaoQin"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#YingEr"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#role">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="zh">身份</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#hasChild">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">亲子</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.hongloumeng.org/ontology#relativeOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#ZhaoYiNiang">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">赵姨娘</rdfs:label>
+    <hlm:name>赵姨娘</hlm:name>
+    <hlm:role>贾政之妾</hlm:role>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaTanChun"/>
+    <hlm:hasChild rdf:resource="http://www.hongloumeng.org/ontology#JiaHuan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#LinDaiYu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">林黛玉</rdfs:label>
+    <hlm:name>林黛玉</hlm:name>
+    <hlm:alias>潇湘妃子</hlm:alias>
+    <hlm:role>林如海之女</hlm:role>
+    <hlm:residence>潇湘馆</hlm:residence>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#ZiJuan"/>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#XueYan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaYingChun">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾迎春</rdfs:label>
+    <hlm:name>贾迎春</hlm:name>
+    <hlm:alias>菱洲</hlm:alias>
+    <hlm:role>贾赦之女</hlm:role>
+    <hlm:hasServant rdf:resource="http://www.hongloumeng.org/ontology#SiQi"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#LiuXiangLian">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">柳湘莲</rdfs:label>
+    <hlm:name>柳湘莲</hlm:name>
+    <hlm:role>尤三姐恋人</hlm:role>
+    <hlm:loves rdf:resource="http://www.hongloumeng.org/ontology#YouSanJie"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#QiaoJie">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">巧姐</rdfs:label>
+    <hlm:name>巧姐</hlm:name>
+    <hlm:role>贾琏之女</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#hasGrandchild">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">祖孙</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.hongloumeng.org/ontology#relativeOf"/>
+    <owl:propertyChainAxiom rdf:nodeID="N0885187f89fb4702b0d7b8c6dfa81335"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#XueBaoQin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">薛宝琴</rdfs:label>
+    <hlm:name>薛宝琴</hlm:name>
+    <hlm:role>薛宝钗堂妹</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaoDa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Servant"/>
+    <rdfs:label xml:lang="zh">焦大</rdfs:label>
+    <hlm:name>焦大</hlm:name>
+    <hlm:role>宁国府老仆</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiangYuHan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">蒋玉菡</rdfs:label>
+    <hlm:name>蒋玉菡</hlm:name>
+    <hlm:alias>琪官</hlm:alias>
+    <hlm:role>戏子</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaYuCun">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">贾雨村</rdfs:label>
+    <hlm:name>贾雨村</hlm:name>
+    <hlm:role>林黛玉老师</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaLan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">贾兰</rdfs:label>
+    <hlm:name>贾兰</hlm:name>
+    <hlm:role>贾珠之子</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#ZiJuan">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">紫鹃</rdfs:label>
+    <hlm:name>紫鹃</hlm:name>
+    <hlm:role>林黛玉丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#JiaFamilyMember">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:label xml:lang="zh">贾府人物</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#hasServant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="zh">主仆</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:range rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbb657ea7ed1f47ca817ab2da86a3efd7">
+    <rdf:first rdf:resource="http://www.hongloumeng.org/ontology#hasChild"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#XingFuRen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">邢夫人</rdfs:label>
+    <hlm:name>邢夫人</hlm:name>
+    <hlm:role>贾赦之妻</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#SheYue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Maid"/>
+    <rdfs:label xml:lang="zh">麝月</rdfs:label>
+    <hlm:name>麝月</hlm:name>
+    <hlm:role>贾宝玉丫鬟</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#Master">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.hongloumeng.org/ontology#JiaFamilyMember"/>
+    <rdfs:label xml:lang="zh">主子</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#MiaoYu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Outsider"/>
+    <rdfs:label xml:lang="zh">妙玉</rdfs:label>
+    <hlm:name>妙玉</hlm:name>
+    <hlm:role>栊翠庵尼姑</hlm:role>
+    <hlm:residence>栊翠庵</hlm:residence>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#QiuTong">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.hongloumeng.org/ontology#Master"/>
+    <rdfs:label xml:lang="zh">秋桐</rdfs:label>
+    <hlm:name>秋桐</hlm:name>
+    <hlm:role>贾琏之妾</hlm:role>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#Outsider">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.hongloumeng.org/ontology#Person"/>
+    <rdfs:label xml:lang="zh">府外人物</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.hongloumeng.org/ontology#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label xml:lang="zh">红楼梦人物本体</rdfs:label>
+    <rdfs:comment xml:lang="zh">《红楼梦》人物关系本体，覆盖荣宁两府、薛家、史家及各房仆从与府外人物</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>
